@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>Все программы Nikolini в одном окне: установить, включить, обновить — галочками.</b><br>
-  WinterDesk, PeekDesk и новые программы — без поиска архивов и ручной распаковки.<br>
+  WinterDesk, PeekDesk, SnapDesk, DockDesk и новые программы — без поиска архивов и ручной распаковки.<br>
   Бесплатно · без рекламы · без слежки · каждая программа работает и без HubDesk.
 </p>
 
@@ -35,8 +35,8 @@
 | 🔘 **Включить и автозапуск** | У каждой программы два переключателя: «Включена» (запустить или аккуратно закрыть) и «Автозапуск» (запускать вместе с Windows). |
 | 🔄 **Обновления** | HubDesk показывает установленную и последнюю версию. «Обновить» — одну программу, «Обновить всё» — сразу все; настройки программ сохраняются. |
 | 🗑️ **Удаление как у всех** | Программы Nikolini видны в «Параметры → Приложения» и удаляются оттуда начисто: папка, автозапуск, записи в реестре. Настройки по желанию остаются. |
-| 📂 **Уже установленные** | Если вы раньше распаковали WinterDesk или PeekDesk вручную, HubDesk найдёт их и будет управлять ими на месте. Перенести в папку Nikolini — только по кнопке, ничего не двигается молча. |
-| 🚀 **Скоро** | SnapDesk, SpotDesk, DockDesk и IslandDesk уже в списке. Когда программа выйдет, её карточка сама станет устанавливаемой — обновлять HubDesk не нужно. |
+| 📂 **Уже установленные** | Если вы раньше распаковали программу Nikolini вручную, HubDesk найдёт их и будет управлять ими на месте. Перенести в папку Nikolini — только по кнопке, ничего не двигается молча. |
+| 🚀 **Скоро** | SpotDesk и IslandDesk уже в списке. Когда программа выйдет, её карточка сама станет устанавливаемой — обновлять HubDesk не нужно. |
 | 📰 **Новости** | Свежие выпуски и объявления из обсуждений на GitHub — на отдельной вкладке. |
 | 🪶 **Лёгкий** | Один файл, меньше мегабайта. В простое HubDesk ничего не делает и ничего не опрашивает; в сеть — только при запуске и по кнопке «Проверить снова». |
 
@@ -46,9 +46,9 @@
 |---|---|---|
 | <img src="docs/assets/apps/winterdesk.png" width="40"> | **[WinterDesk](https://nikolinioff.github.io/WinterDesk/)** | Снег на рабочем столе: сугробы на окнах, гирлянды, ёлочка и отсчёт до Нового года |
 | <img src="docs/assets/apps/peekdesk.png" width="40"> | **[PeekDesk](https://nikolinioff.github.io/PeekDesk/)** | Предпросмотр файлов по пробелу в Проводнике, как Quick Look в macOS |
-| 🟩 | **SnapDesk** · скоро | Скриншоты и запись экрана в стиле macOS, плавающая миниатюра |
+| <img src="docs/assets/apps/snapdesk.png" width="40"> | **[SnapDesk](https://nikolinioff.github.io/SnapDesk/)** | Скриншоты и запись экрана по <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>5</kbd>, как в macOS |
+| <img src="docs/assets/apps/dockdesk.png" width="40"> | **[DockDesk](https://nikolinioff.github.io/DockDesk/)** | Док внизу экрана, как в macOS: любимые программы под рукой, значки растут под курсором |
 | 🟧 | **SpotDesk** · скоро | Поиск по <kbd>Alt</kbd>+<kbd>Space</kbd>: приложения, файлы, калькулятор, курсы валют |
-| 🟥 | **DockDesk** · скоро | Док в стиле macOS с увеличением иконок |
 | 🟦 | **IslandDesk** · скоро | «Динамический остров»: музыка, громкость, таймеры, уведомления |
 
 > **HubDesk — надстройка, а не обязательная часть.** Каждую программу можно скачать и запустить отдельно, без HubDesk, а сам HubDesk можно удалить в любой момент — программы продолжат работать.
@@ -112,6 +112,20 @@
     <td>
       <b><a href="https://nikolinioff.github.io/PeekDesk/">PeekDesk</a></b> — предпросмотр файлов по пробелу в Проводнике Windows, как Quick Look в macOS.<br>
       <sub><a href="https://nikolinioff.github.io/PeekDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/PeekDesk">GitHub</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/SnapDesk/"><img src="docs/assets/apps/snapdesk.png" alt="SnapDesk" width="72"></a></td>
+    <td>
+      <b><a href="https://nikolinioff.github.io/SnapDesk/">SnapDesk</a></b> — скриншоты и запись экрана по горячей клавише в Windows, как Cmd+Shift+5 в macOS: область, окно, экран или видео.<br>
+      <sub><a href="https://nikolinioff.github.io/SnapDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/SnapDesk">GitHub</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/DockDesk/"><img src="docs/assets/apps/dockdesk.png" alt="DockDesk" width="72"></a></td>
+    <td>
+      <b><a href="https://nikolinioff.github.io/DockDesk/">DockDesk</a></b> — док для Windows, как в macOS: любимые программы внизу экрана, значки плавно растут под курсором.<br>
+      <sub><a href="https://nikolinioff.github.io/DockDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/DockDesk">GitHub</a></sub>
     </td>
   </tr>
   <!-- Новая программа: скопируйте строку <tr>…</tr> выше и поменяйте значок, название, описание и ссылки. -->
