@@ -12,7 +12,7 @@
     { "id": "SpotDesk", "status": "soon", "color": "#F0A23C", "glyph": "Sp",
       "tagline": "Поиск по Alt+Space: приложения, файлы, калькулятор, курсы валют" },
     { "id": "DockDesk", "status": "released", "color": "#E2577A",
-      "tagline": "Док внизу экрана, как в macOS: значки растут под курсором" },
+      "tagline": "Док как в macOS: значки растут под курсором" },
     { "id": "IslandDesk", "status": "soon", "color": "#46B8D8",
       "tagline": "«Динамический остров»: музыка, громкость, таймеры, уведомления" }
   ]
