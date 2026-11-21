@@ -1,31 +1,72 @@
 {
   "schema": 1,
-  "comment": "Список программ HubDesk. Встроен в exe (res/app.rc, RCDATA 2) и лежит в NikoliniOFF/HubDesk/main/apps.json — его HubDesk подхватывает без новой версии. Пустые поля берутся по правилу ECOSYSTEM.md §4: exe = <id>.exe, repo = NikoliniOFF/<id>, сайт = nikolinioff.github.io/<id>/, mutex = Local\\<id>.Single, окно = <id>Msg. glyph — буквы на значке-заглушке (по умолчанию первая буква). site/icon/description — для разделов «Другие программы от Nikolini» в других программах (HubDesk использует site и tagline).",
+  "comment": "Список программ HubDesk. Встроен в exe (res/app.rc, RCDATA 2) и лежит в NikoliniOFF/HubDesk/main/apps.json — его HubDesk подхватывает без новой версии. Пустые поля берутся по правилу ECOSYSTEM.md §4: exe = <id>.exe, repo = NikoliniOFF/<id>, сайт = nikolinioff.github.io/<id>/, mutex = Local\\<id>.Single, окно = <id>Msg. glyph — буквы на значке-заглушке (по умолчанию первая буква). site/icon/description — для разделов «Другие программы от Nikolini» в других программах (HubDesk использует site и tagline). Запись hub — сам HubDesk: другие программы ставят её первой карточкой; она вне списка apps, чтобы HubDesk не показывал сам себя.",
+  "hub": {
+    "id": "HubDesk",
+    "site": "https://nikolinioff.github.io/HubDesk/",
+    "icon": "https://nikolinioff.github.io/HubDesk/assets/icon-256.png",
+    "color": "#5A6CF0",
+    "description": "Лаунчер Nikolini: все программы в одном окне — установка галочками, автозапуск и обновления.",
+    "tagline": "Все программы Nikolini в одном окне"
+  },
   "apps": [
-    { "id": "WinterDesk", "status": "released", "color": "#5AB4F0",
-      "site": "https://nikolinioff.github.io/WinterDesk/", "icon": "https://nikolinioff.github.io/WinterDesk/assets/icon-256.png",
+    {
+      "id": "WinterDesk",
+      "status": "released",
+      "color": "#5AB4F0",
+      "site": "https://nikolinioff.github.io/WinterDesk/",
+      "icon": "https://nikolinioff.github.io/WinterDesk/assets/icon-256.png",
       "description": "Снег на рабочем столе Windows: сугробы на окнах, гирлянды, ёлочка и отсчёт до Нового года.",
       "tagline": "Снег, сугробы, гирлянды и ёлка на рабочем столе",
-      "msgClass": "WinterDeskMsgWnd", "mutex": "Local\\WinterDeskSingleton" },
-    { "id": "PeekDesk", "status": "released", "color": "#8C6CF0",
-      "site": "https://nikolinioff.github.io/PeekDesk/", "icon": "https://nikolinioff.github.io/PeekDesk/assets/icon-256.png",
+      "msgClass": "WinterDeskMsgWnd",
+      "mutex": "Local\\WinterDeskSingleton"
+    },
+    {
+      "id": "PeekDesk",
+      "status": "released",
+      "color": "#8C6CF0",
+      "site": "https://nikolinioff.github.io/PeekDesk/",
+      "icon": "https://nikolinioff.github.io/PeekDesk/assets/icon-256.png",
       "description": "Предпросмотр файлов по пробелу в Проводнике Windows, как Quick Look в macOS.",
-      "tagline": "Предпросмотр файлов по пробелу, как Quick Look" },
-    { "id": "SnapDesk", "status": "released", "color": "#3FBF8A", "glyph": "Sn",
-      "site": "https://nikolinioff.github.io/SnapDesk/", "icon": "https://nikolinioff.github.io/SnapDesk/assets/icon-256.png",
+      "tagline": "Предпросмотр файлов по пробелу, как Quick Look"
+    },
+    {
+      "id": "SnapDesk",
+      "status": "released",
+      "color": "#3FBF8A",
+      "glyph": "Sn",
+      "site": "https://nikolinioff.github.io/SnapDesk/",
+      "icon": "https://nikolinioff.github.io/SnapDesk/assets/icon-256.png",
       "description": "Скриншоты и запись экрана по горячей клавише в Windows, как Cmd+Shift+5 в macOS: область, окно, экран или видео.",
-      "tagline": "Скриншоты и запись экрана по Ctrl+Shift+5, как в macOS" },
-    { "id": "SpotDesk", "status": "released", "color": "#F0A23C", "glyph": "Sp",
-      "site": "https://nikolinioff.github.io/SpotDesk/", "icon": "https://nikolinioff.github.io/SpotDesk/assets/icon-256.png",
+      "tagline": "Скриншоты и запись экрана по Ctrl+Shift+5, как в macOS"
+    },
+    {
+      "id": "SpotDesk",
+      "status": "released",
+      "color": "#F0A23C",
+      "glyph": "Sp",
+      "site": "https://nikolinioff.github.io/SpotDesk/",
+      "icon": "https://nikolinioff.github.io/SpotDesk/assets/icon-256.png",
       "description": "Быстрый поиск по Alt+Space в Windows, как Spotlight в macOS: программы, файлы, калькулятор и курсы валют.",
-      "tagline": "Поиск по Alt+Space, как Spotlight в macOS" },
-    { "id": "DockDesk", "status": "released", "color": "#E2577A",
-      "site": "https://nikolinioff.github.io/DockDesk/", "icon": "https://nikolinioff.github.io/DockDesk/assets/icon-256.png",
+      "tagline": "Поиск по Alt+Space, как Spotlight в macOS"
+    },
+    {
+      "id": "DockDesk",
+      "status": "released",
+      "color": "#E2577A",
+      "site": "https://nikolinioff.github.io/DockDesk/",
+      "icon": "https://nikolinioff.github.io/DockDesk/assets/icon-256.png",
       "description": "Док для Windows, как в macOS: любимые программы внизу экрана, значки плавно растут под курсором.",
-      "tagline": "Док как в macOS: значки растут под курсором" },
-    { "id": "IslandDesk", "status": "released", "color": "#46B8D8",
-      "site": "https://nikolinioff.github.io/IslandDesk/", "icon": "https://nikolinioff.github.io/IslandDesk/assets/icon-256.png",
+      "tagline": "Док как в macOS: значки растут под курсором"
+    },
+    {
+      "id": "IslandDesk",
+      "status": "released",
+      "color": "#46B8D8",
+      "site": "https://nikolinioff.github.io/IslandDesk/",
+      "icon": "https://nikolinioff.github.io/IslandDesk/assets/icon-256.png",
       "description": "«Динамический остров» для Windows: музыка, громкость, таймер, загрузки и уведомления в живой пилюле вверху экрана.",
-      "tagline": "«Динамический остров»: музыка, таймер, загрузки" }
+      "tagline": "«Динамический остров»: музыка, таймер, загрузки"
+    }
   ]
 }
