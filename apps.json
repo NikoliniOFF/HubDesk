@@ -10,10 +10,10 @@
     { "id": "SnapDesk", "status": "released", "color": "#3FBF8A", "glyph": "Sn",
       "tagline": "Скриншоты и запись экрана по Ctrl+Shift+5, как в macOS" },
     { "id": "SpotDesk", "status": "released", "color": "#F0A23C", "glyph": "Sp",
-      "tagline": "Поиск по Alt+Space, как Spotlight: программы, файлы, курсы" },
+      "tagline": "Поиск по Alt+Space, как Spotlight в macOS" },
     { "id": "DockDesk", "status": "released", "color": "#E2577A",
       "tagline": "Док как в macOS: значки растут под курсором" },
     { "id": "IslandDesk", "status": "released", "color": "#46B8D8",
-      "tagline": "«Динамический остров»: музыка, громкость, таймер, загрузки" }
+      "tagline": "«Динамический остров»: музыка, таймер, загрузки" }
   ]
 }
