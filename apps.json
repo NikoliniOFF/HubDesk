@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "comment": "Список программ HubDesk. Встроен в exe (res/app.rc, RCDATA 2) и, когда появится, лежит в NikoliniOFF/HubDesk/main/apps.json — его HubDesk подхватывает без новой версии. Пустые поля берутся по правилу ECOSYSTEM.md §4: exe = <id>.exe, repo = NikoliniOFF/<id>, сайт = nikolinioff.github.io/<id>/, mutex = Local\\<id>.Single, окно = <id>Msg. glyph — буквы на значке-заглушке (по умолчанию первая буква).",
+  "apps": [
+    { "id": "WinterDesk", "status": "released", "color": "#5AB4F0",
+      "tagline": "Снег, сугробы, гирлянды и ёлка на рабочем столе",
+      "msgClass": "WinterDeskMsgWnd", "mutex": "Local\\WinterDeskSingleton" },
+    { "id": "PeekDesk", "status": "released", "color": "#8C6CF0",
+      "tagline": "Предпросмотр файлов по пробелу, как Quick Look" },
+    { "id": "SnapDesk", "status": "soon", "color": "#3FBF8A", "glyph": "Sn",
+      "tagline": "Скриншоты и запись экрана в стиле macOS, плавающая миниатюра" },
+    { "id": "SpotDesk", "status": "soon", "color": "#F0A23C", "glyph": "Sp",
+      "tagline": "Поиск по Alt+Space: приложения, файлы, калькулятор, курсы валют" },
+    { "id": "DockDesk", "status": "soon", "color": "#E2577A",
+      "tagline": "Док в стиле macOS с увеличением иконок" },
+    { "id": "IslandDesk", "status": "soon", "color": "#46B8D8",
+      "tagline": "«Динамический остров»: музыка, громкость, таймеры, уведомления" }
+  ]
+}
