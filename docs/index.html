@@ -83,16 +83,25 @@ footer{padding:36px 0 50px;color:var(--sub);font-size:14.5px;text-align:center;b
       <p class="dlcount" hidden></p>
     </div>
     <div class="stack">
-      <div class="shot"><img src="assets/media/main.png" alt="Окно HubDesk: WinterDesk и PeekDesk, ниже — блок «Скоро»" width="772" height="646"></div>
+      <div class="shot"><img src="assets/media/main.png" alt="Окно HubDesk: все программы Nikolini с переключателями и версиями" width="772" height="646"></div>
     </div>
   </div>
+
+  <section id="new">
+    <h2>Что нового в 1.0.1</h2><p class="sub"><a href="https://github.com/NikoliniOFF/HubDesk/releases/latest">Все изменения на странице выпуска</a></p>
+    <div class="grid">
+      <div class="card"><div class="ic">⬆️</div><h3>Обновляется сам</h3><p>Вышла новая версия — сверху плашка «Обновить»: HubDesk скачает её, проверит SHA-256, заменит себя и перезапустится. Выключается в «О HubDesk».</p></div>
+      <div class="card"><div class="ic">✅</div><h3>Без ошибки 403</h3><p>Версии и новости берутся с обычных страниц GitHub без лимита запросов и запоминаются — «GitHub ответил 403» больше не появляется.</p></div>
+      <div class="card"><div class="ic">📰</div><h3>Новости без зависаний</h3><p>Никакого вечного «Загружаю…»: если загрузить не вышло, HubDesk так и скажет и предложит повторить. У 1.0.0 один раз скачайте новую версию вручную.</p></div>
+    </div>
+  </section>
 
   <section id="features">
     <h2>Что умеет</h2><p class="sub">Бесплатно · без рекламы · без слежки · меньше мегабайта</p>
     <div class="grid">
       <div class="card"><div class="ic">📦</div><h3>Установка в один щелчок</h3><p>Программа скачивается с GitHub, проверяется по SHA-256 и ставится в %LOCALAPPDATA%\Nikolini. Права администратора не нужны.</p></div>
       <div class="card"><div class="ic">🔘</div><h3>Включить и автозапуск</h3><p>У каждой программы два переключателя: «Включена» — запустить или аккуратно закрыть, «Автозапуск» — вместе с Windows.</p></div>
-      <div class="card"><div class="ic">🔄</div><h3>Обновления</h3><p>Установленная и последняя версия рядом. «Обновить» — одну программу, «Обновить всё» — все сразу; настройки сохраняются.</p></div>
+      <div class="card"><div class="ic">🔄</div><h3>Обновления</h3><p>Установленная и последняя версия рядом. «Обновить» — одну программу, «Обновить всё» — все сразу; настройки сохраняются. Себя HubDesk тоже обновляет сам.</p></div>
       <div class="card"><div class="ic">🗑️</div><h3>Удаление как у всех</h3><p>Программы видны в «Параметры → Приложения» и удаляются оттуда начисто. Настройки по желанию остаются.</p></div>
       <div class="card"><div class="ic">📂</div><h3>Уже установленные</h3><p>Распакованные вручную программы находятся сами и управляются на месте. Перенос в папку Nikolini — только по кнопке.</p></div>
       <div class="card"><div class="ic">🪶</div><h3>Лёгкий</h3><p>Один файл. В простое ничего не делает и ничего не опрашивает; в сеть — только к GitHub, при запуске и по кнопке.</p></div>
@@ -122,7 +131,7 @@ footer{padding:36px 0 50px;color:var(--sub);font-size:14.5px;text-align:center;b
     <h2>Как это выглядит</h2><p class="sub">Тёмное окно в стиле Windows 11</p>
     <div class="gal">
       <figure><div class="shot"><img src="assets/media/news.png" alt="Вкладка «Новости»" loading="lazy"></div><figcaption>Новости из обсуждений на GitHub</figcaption></figure>
-      <figure><div class="shot"><img src="assets/media/about.png" alt="Вкладка «О HubDesk»" loading="lazy"></div><figcaption>Установка самого HubDesk</figcaption></figure>
+      <figure><div class="shot"><img src="assets/media/about.png" alt="Вкладка «О HubDesk»" loading="lazy"></div><figcaption>Ссылки и обновления самого HubDesk</figcaption></figure>
     </div>
   </section>
 
@@ -142,7 +151,8 @@ footer{padding:36px 0 50px;color:var(--sub);font-size:14.5px;text-align:center;b
     <details><summary>Windows пишет «Система Windows защитила ваш компьютер»</summary><p>Это фильтр SmartScreen: программа новая и пока не подписана платным сертификатом. Нажмите «Подробнее», затем «Выполнить в любом случае». Скачивайте HubDesk только со <a href="https://github.com/NikoliniOFF/HubDesk/releases">страницы выпусков</a> — рядом с каждым архивом лежит файл .sha256 с контрольной суммой.</p></details>
     <details><summary>Нужен ли HubDesk, чтобы пользоваться WinterDesk или PeekDesk?</summary><p>Нет. Каждая программа Nikolini полностью самостоятельна: свои настройки, автозапуск и обновления. HubDesk просто собирает их в одном окне.</p></details>
     <details><summary>Как удалить программу или сам HubDesk?</summary><p>В «Параметры → Приложения» найдите программу Nikolini и нажмите «Удалить»: программа аккуратно закроется, исчезнут папка, автозапуск и записи в реестре; настройки по умолчанию остаются — HubDesk спросит. Если удалить HubDesk раньше других программ, его маленькая служебная копия останется в %LOCALAPPDATA%\Nikolini\HubDesk, чтобы остальные тоже удалялись начисто.</p></details>
-    <details><summary>Программа что-нибудь отправляет?</summary><p>Нет. HubDesk обращается только к GitHub: список программ, выпуски и новости. На этом сайте нет счётчиков и аналитики.</p></details>
+    <details><summary>Как обновить сам HubDesk?</summary><p>С версии 1.0.1 он делает это сам: когда выходит новая версия, сверху появляется плашка «Обновить» — HubDesk скачает архив с GitHub, проверит SHA-256, заменит свой файл и перезапустится. Выключить можно в «О HubDesk». Если у вас 1.0.0, один раз скачайте <a class="dl" href="https://github.com/NikoliniOFF/HubDesk/releases/latest/download/HubDesk-win64.zip">последнюю версию</a> и запустите её — она сама заменит старую копию.</p></details>
+    <details><summary>Программа что-нибудь отправляет?</summary><p>Нет. HubDesk только читает GitHub: список программ, страницы выпусков и ленту обсуждений с новостями. На этом сайте нет счётчиков и аналитики.</p></details>
     <details><summary>Не будет ли тормозить компьютер?</summary><p>Нет. В простое HubDesk не тратит процессор и ничего не опрашивает.</p></details>
   </section>
 
